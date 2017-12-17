@@ -1,0 +1,11 @@
+extends base.pug
+
+block body
+  form(method="POST", action="/signup")
+    .form-group
+      label(for="username") Username
+      input.form-control#username(type="text" placeholder="Username" required autofocus)
+    .form-group
+      label(for="password") Password
+      input.form-control#password(type="password" placeholder="Password" required)
+    input.btn.btn-primary.btn-block(type="submit" value="Sign Up")

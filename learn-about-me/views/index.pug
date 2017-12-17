@@ -1,0 +1,12 @@
+extends base.pug
+
+block body
+  h1 Welcome to Learn About Me!
+
+  each user in users
+    .panel.panel-default
+      .panel-heading
+        a(href=`/users/${user.username}`) #{user.username}
+        unless user.bio
+          .panel-body #{user.bio}
+

@@ -1,0 +1,13 @@
+.navbar.navbar-default
+  .container
+    .navbar-header
+      a.navbar-brand(href="/") Learn About Me
+
+    ul.nav.navbar-nav.navbar-right
+      if currentUser
+        li Hello, #{currentUser.name()}
+        li: a(href="/logout") Log Out
+      else
+        li: a(href="/login") Log In
+        li: a(href="/signup") Sign Up
+

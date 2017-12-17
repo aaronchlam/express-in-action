@@ -1,0 +1,9 @@
+{
+  "name": "chapter-3",
+  "author": "Aaron Lam",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "zip-lookup",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Aaron Lam",
+}

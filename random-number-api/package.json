@@ -1,0 +1,14 @@
+{
+  "name": "random-number-api",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Aaron Lam",
+  "devDependencies": {
+    "nodemon": "^1.13.3"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
+}

@@ -6,7 +6,7 @@ block body
   each user in users
     .panel.panel-default
       .panel-heading
-        a(href=`/users/${user.username}`) #{user.username}
-        unless user.bio
-          .panel-body #{user.bio}
+        a(href=`/users/${user.username}`)= user.username
+        if user.bio
+          .panel-body= user.bio
 

@@ -1,0 +1,13 @@
+extends base.pug
+
+block body
+  form(method="post", action="/edit")
+    .form-group
+      label(for="Display Name") Display Name
+      input.form-control#displayname(type="text" name="displayname" 
+      placeholder="Display Name" value=currentUser.displayName || "" autofocus)
+    .form-group
+      label(for="Biography") Biography
+      textarea.form-control#biography(name="biography"
+      placeholder="Tell us about yourself!")= currentUser.bio || ""
+    input.btn.btn-primary.btn-block(type="submit" value="Update")

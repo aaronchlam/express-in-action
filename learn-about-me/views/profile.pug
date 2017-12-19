@@ -1,0 +1,12 @@
+extends base.pug
+
+block body
+  if currentUser && currentUser.id == user.id
+    a.pull-right(href="/edit") Edit your profile
+
+  h1= user.name()
+  h2 Joined on #{user.createdAt}
+
+  if user.bio
+    p= user.bio
+

@@ -11,13 +11,13 @@ const userSchema = mongoose.Schema({
     bio: String,
 });
 
-userSchema.methods.name = () => {
+userSchema.methods.name = function() {
     return this.displayName || this.username;
 };
 
-userSchema.methods.checkPassword = (guess, callback) => {
+userSchema.methods.checkPassword = function(guess, callback) {
     bcrypt.compare(guess, this.password, (error, result) => {
-        return callback(err, result);
+        return callback(error, result);
     });
 };
 
